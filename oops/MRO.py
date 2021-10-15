@@ -5,7 +5,9 @@ class Mother:
     def m1(self):
         print('Mother Class')
 class Child(Father,Mother):
-    def m3(self):
+    def __init__(self):
         self.m1()
+        super().__init__()
+        print('Child Class')
 c = Child()
-c.m3()
+
