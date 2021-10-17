@@ -6,4 +6,3 @@ for x in num:
     else:
         num2[x] = 1
 print(num2)
-    
