@@ -1,12 +1,12 @@
 import pickle
-class Employee:
-    def __init__(self, eno, ename, esal):
-        self.eno = eno
-        self.ename = ename
-        self.esal = esal
+class Student:
+    def __init__(self):
+        self.sname = input('Enter student Name:')
+        self.sroll = input('Enter student roll:')
+        self.course = input('Enter a course:')
     def __str__(self):
-        return str(self.eno) + "" + self.ename + "" + str(self.esal)
-with open('Employee.dat', "wb") as f:
-    emp = Employee(101, 'san', 23000)
+        return self.sname + "" + str(self.sroll) + "" + self.course
+with open("Employee.dat", 'wb') as f:
+    emp = Student()
     pickle.dump(emp, f)
-    print('save object')
+    print('save')
